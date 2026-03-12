@@ -1,6 +1,6 @@
 import 'package:eltaquim_elespo3y/core/resources/image_manager.dart';
-
 import '../../model/on_boarding_model.dart';
+import '../../view/on_boarding_page/on_boarding_screens/onboarding_widgets.dart';
 
 class Utils {
   Utils._();
@@ -23,6 +23,11 @@ class Utils {
     ),
   ];
 
+  static List<OnBoardingScreenPageView> onBoardingPageViewList=[
+    OnBoardingScreenPageView(image: ImageManager.car , title: onboardingTitle1, subtitle: onboardingSubTitle1),
+    OnBoardingScreenPageView(image: ImageManager.safina , title: onboardingTitle2, subtitle: onboardingSubTitle2),
+    OnBoardingScreenPageView(image: ImageManager.map , title: onboardingTitle3, subtitle: onboardingSubTitle3),
+  ];
 
   static const String appTitle = "AirSprint";
   static const String onboardingTitle1 = "Ship Your Parcel";
@@ -36,4 +41,5 @@ class Utils {
       "Stay informed about the parcel and get the real-time location";
 
   static const String skip = "skip";
+  static const String next = "Continue";
 }

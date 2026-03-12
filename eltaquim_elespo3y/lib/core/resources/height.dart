@@ -72,4 +72,6 @@ class HeightManager {
   static double h550 = 550.0.h;
 
   static double h400 = 400.0.h;
+
+  static double h2 = 2.h;
 }
